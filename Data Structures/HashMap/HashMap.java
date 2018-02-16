@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class HashMap<K,V> {
-	public class hmnodes{ //HashMap nodes 
+	public class hmapnodes{ //HashMap nodes 
 		K key;
 		V value;
 	}
@@ -91,7 +91,7 @@ public class HashMap<K,V> {
 		return arr;
 	}
 	
-	public ArrayList<V> valueset() throws Exception{
+	public ArrayList<V> value() throws Exception{
 		ArrayList<V> arr=new ArrayList<>();
 		for(int i=0;i<buckets.length;i++){
 			for(int j=0;j<buckets[i].size();j++){
